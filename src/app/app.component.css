@@ -1,0 +1,22 @@
+.text-center{
+  background-color: crimson;
+  margin-bottom: 5%;
+}
+
+.headowo{
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 5%;
+  text-align: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+h1, img {
+  margin: 0 10px;
+}

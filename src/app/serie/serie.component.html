@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <table class="table table-striped table-bordered">
+              <thead class="thead">
+                 <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Channel</th>
+                    <th>Seasons</th>
+                 </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-light-gray" *ngFor="let serie of series">
+                  <td>
+                    <strong>{{serie.id}}</strong>
+                  </td>
+                  <td>
+                    <span class="link" (click)="clicker(serie.id-1)">{{serie.name}}</span>
+                  </td>
+                  <td>
+                    {{serie.channel}}
+                  </td>
+                  <td>
+                    {{serie.seasons}}
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+          <p class = "Promedio">Seasons average: {{ average }}</p>
+      </div>
+  </div>
